@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>mini piano</title>
+</head>
+
+<body>
+    <div class="search_for_song">
+        請輸入歌名：
+        <input type="text" id="song_name" placeholder="請輸入歌名">
+        <button id="play_btn">演奏</button>
+    </div>
+
+    <div class="instruction_btn">
+        説明書
+    </div>
+    <div class="song_list_btn">
+        曲庫
+    </div>
+
+    <div id="instruction">
+        使用鍵盤上的S~L鍵操作鋼琴白鍵,E,R,Y,U,I操作鋼琴黑鍵，也可以通過鼠標點擊來彈奏鋼琴。
+        可通過快捷鍵V鍵控制琴鍵上數字的顯示與隱藏。
+    </div>
+    <div class="song_list">
+        <ul></ul>
+    </div>
+
+    <!-- 鋼琴骨架 -->
+    <!-- div是白鍵，p是黑鍵 -->
+    <ul class="piano">
+        <li>
+            <div></div>
+            <p></p>
+        </li> <!-- 黑 白 -->
+        <li>
+            <div></div>
+            <p></p>
+        </li>
+        <li>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+            <p></p>
+        </li>
+        <li>
+            <div></div>
+            <p></p>
+        </li>
+        <li>
+            <div></div>
+            <p></p>
+        </li>
+        <li>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+        </li>
+    </ul>
+
+    <div id="lyrics"></div>
+
+    <script src="./piano.js"></script>
+</body>
+
+</html>
